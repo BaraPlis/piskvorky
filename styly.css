@@ -1,4 +1,53 @@
 h1 {
   font-family: Lobster;
   font-size: 55px;
+  text-align: center;
+  color: white;
+}
+img {
+  width: 400px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+}
+.content {
+  background-color: #283e50;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 100px;
+}
+button {
+  font-size: 20px;
+  color: #fff;
+  width: 400px;
+  height: 50px;
+  border: inherit;
+}
+.pravidla {
+  background-color: #1fcca4;
+}
+
+.play {
+  background-color: #0197f6;
+  border-top: solid;
+  border-color: #283e50;
+}
+.pravidla:hover {
+  background-color: #1cbb96;
+}
+.play:hover {
+  background-color: #0090e9;
 }
