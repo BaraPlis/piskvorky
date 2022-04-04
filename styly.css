@@ -39,11 +39,11 @@ button {
   height: 50px;
   border: inherit;
 }
-.pravidla {
+button.pravidla {
   background-color: #1fcca4;
 }
 
-.play {
+button.play {
   background-color: #0197f6;
   border-top: solid;
   border-color: #283e50;
@@ -69,24 +69,18 @@ li {
   font-size: 20px;
   text-align: left;
 }
-.rules {
-  background-color: #283e50;
-  color: #fff;
-  padding: 10px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  width: 380px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 400px;
+.content.rules {
+  max-width: 400px;
+  padding-top: 20px;
 }
 .instructions {
-  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 figure {
   margin: 10px;
-  width: 100%;
+  max-width: 80%;
 }
 figcaption {
   text-align: center;
@@ -95,21 +89,29 @@ figcaption {
   margin: 10px;
 }
 img {
-  width: 350px;
+  width: 100%;
 }
 button.pravidla {
   width: 100%;
 }
+button.play {
+  width: 100%;
+}
+
 @media (min-width: 800px) {
   .rules {
-    width: 600px;
+    min-width: 600px;
   }
   .instructions {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   figure {
-    width: calc(100% / 2);
-    margin: 0px 20px 0px 20px;
+    width: calc(50% - 25px);
+    margin: auto;
+    margin-top: 20px;
   }
 }
