@@ -4,7 +4,7 @@ h1 {
   text-align: center;
   color: white;
 }
-img {
+.uvodni {
   width: 400px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -29,6 +29,8 @@ body {
   align-items: center;
   padding-bottom: 80px;
   padding-top: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 button {
   font-size: 20px;
@@ -51,4 +53,63 @@ button {
 }
 .play:hover {
   background-color: #0090e9;
+}
+.circle {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+.cross {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+li {
+  margin: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+.rules {
+  background-color: #283e50;
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 400px;
+}
+.instructions {
+  padding: 10px;
+}
+figure {
+  margin: 10px;
+  width: 100%;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  margin: 10px;
+}
+img {
+  width: 350px;
+}
+button.pravidla {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .rules {
+    width: 600px;
+  }
+  .instructions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  figure {
+    width: calc(100% / 2);
+    margin: 0px 20px 0px 20px;
+  }
 }
