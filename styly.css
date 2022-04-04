@@ -24,8 +24,7 @@ body {
   width: 400px;
   display: flex;
   flex-direction: column;
-  position: relative;
-  left: 400px;
+  margin: 50px auto;
   align-items: center;
   padding-bottom: 80px;
   padding-top: 40px;
@@ -72,11 +71,13 @@ li {
 .content.rules {
   max-width: 400px;
   padding-top: 20px;
+  margin: 50px auto;
 }
 .instructions {
   margin: 20px;
   display: flex;
   flex-direction: column;
+  margin: 50px auto;
 }
 figure {
   margin: 10px;
